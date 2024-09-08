@@ -27,7 +27,7 @@ const TestimonialData = [
 
 const Testimonial = () => {
   return (
-    <div className="container py-14 px-4">
+    <div className=" py-14 px-4">
       <div className="space-y-4 text-center max-w-[550px] mx-auto mb-8">
         <h1 className="text-4xl font-bold font-serif">
           Words from our customers
@@ -38,7 +38,10 @@ const Testimonial = () => {
         </p>
       </div>
       {/* Testimonial card */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+
+      <div className="bg-black p-12 text-white
+      ">
+      <div className="container grid grid-cols-1 md:grid-cols-3 gap-10">
         {TestimonialData.map((card) => {
           return (
             <div key={card.id}>
@@ -50,10 +53,16 @@ const Testimonial = () => {
                   <div className="text-xs mt-2">⭐⭐⭐⭐⭐</div>
                 </div>
               </div>
+              {/* Bottom Section */}
+              <div className="mt-5 border-t-2 border-gray-500 pt-5">
+                <p className="text-sm text-gray-500">{card.text}</p>
+              </div>
             </div>
           );
         })}
       </div>
+      </div>
+      
     </div>
   );
 };
