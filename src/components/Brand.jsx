@@ -7,13 +7,13 @@ import Brand5 from '../assets/brand/5.png'
 
 const Brand = () => {
   return (
-   <div className="container">
-    <div>
-        <img src={Brand1} alt="brand" />
-        <img src={Brand2} alt="brand" />
-        <img src={Brand3} alt="brand" />
-        <img src={Brand4} alt="brand" />
-        <img src={Brand5} alt="brand" />
+   <div className="container py-14 ">
+    <div className='flex flex-wrap justify-center gap-6 lg:gap-[4rem]'>
+        <img src={Brand1} alt="brand" className='w-[110px]' />
+        <img src={Brand2} alt="brand" className='w-[110px]' />
+        <img src={Brand3} alt="brand" className='w-[110px]' />
+        <img src={Brand4} alt="brand" className='w-[110px]' />
+        <img src={Brand5} alt="brand" className='w-[110px]' />
     </div>
    </div>
   )
