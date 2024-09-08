@@ -37,7 +37,7 @@ const Navbar = () => {
           
         </ul>
         <div>
-          <button className="text-sm lg:text-base border-black px-4 py-2 border-[1px] shadow-[5px_5px_0px_0px] hover:shadow-[0px_0px_0px_0px] hover:bg-black hover:text-white cursor-pointer duration-300">Try For Free</button>
+          <button className="primary-btn">Try For Free</button>
         </div>
       </div>
     </>
