@@ -12,7 +12,7 @@ import Footer from "./components/Footer";
 
 const App = () => {
   return (
-    <div className="overflow-x-hidden px-2">
+    <div className="overflow-x-hidden px-2 py-6">
       <Navbar />
       <Hero/>
       <Brand/>
