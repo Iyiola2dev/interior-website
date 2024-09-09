@@ -26,24 +26,17 @@ const Hero = () => {
             Bring your dream to life with one-on-one design help & hand picked
             products tailored to your style, space and budget.
           </motion.p>
-          <div className="space-x-4">
-            <motion.button
-              variants={SlideUp(0.8)}
-              initial="initial"
-              animate="animate"
-              className="primary-btn uppercase text-white bg-black shadow-[5px_5px_0px_0px_#6c6c6c]"
-            >
+          <motion.div
+            variants={SlideUp(0.8)}
+            initial="initial"
+            animate="animate"
+            className="space-x-4"
+          >
+            <button className="primary-btn uppercase text-white bg-black shadow-[5px_5px_0px_0px_#6c6c6c]">
               GET STARTED
-            </motion.button>
-            <motion.button
-              variants={SlideUp(1.1)}
-              initial="initial"
-              animate="animate"
-              className="primary-btn uppercase"
-            >
-              CONTACT US
-            </motion.button>
-          </div>
+            </button>
+            <button className="primary-btn uppercase">CONTACT US</button>
+          </motion.div>
         </div>
         {/* image section */}
         <div className="flex flex-col justify-center items-center">
