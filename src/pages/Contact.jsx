@@ -25,8 +25,8 @@ const Contact = () => {
   };
 
   return (
-    <div className="container mx-auto px-4 pt-11 ">
-      <div className="flex flex-col md:flex-row justify-center items-center ">
+    <div className="container mx-auto px-4 pt-11 "  id="Contacts">
+      <div className="flex flex-col md:flex-row justify-center items-center gap-5 p-5 ">
         <div className=" flex-1 w-[300px]  md:w-full"><img src={Banner1} alt="" /></div>
         <div className="flex-1 w-[300px] md:w-full  ">
       <form onSubmit={handleSubmit} className="flex flex-col max-w-md mx-auto border border-gray-500 p-4 rounded-lg shadow-md">

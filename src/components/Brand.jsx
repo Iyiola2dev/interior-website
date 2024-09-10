@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 import { SlideLeft } from "../animation/animate";
 
 const Brand = () => {
+  
   return (
     <div className="container py-14 ">
       <div className="flex flex-wrap justify-center gap-6 lg:gap-[4rem]">

@@ -2,8 +2,14 @@ import { motion } from "framer-motion";
 
 import Banner1 from "../assets/banner2.png";
 import { SlideUp } from "../animation/animate";
+import { useNavigate } from "react-router-dom";
 
 const Banner2 = () => {
+  const navigate = useNavigate();
+
+  const handleContactClick = () => {
+    navigate("/contact");
+  };
   return (
     <div>
       <div className="container px-4 py-14">
@@ -53,7 +59,9 @@ const Banner2 = () => {
                 variants={SlideUp(0.6)}
                 initial="initial"
                 whileInView="animate"
+                onClick={handleContactClick}
               >
+                
                 Contact us
               </motion.button>
             </div>

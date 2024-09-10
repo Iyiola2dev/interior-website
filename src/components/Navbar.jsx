@@ -1,10 +1,17 @@
 import Logo from "../assets/Logo.png";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 
 import { Link } from "react-scroll";
 
 const Navbar = () => {
+  const navigate = useNavigate();
+
+  const handleContactClick = () => {
+    navigate("/contact");
+  };
+  
   return (
     <>
       <motion.div
@@ -26,7 +33,7 @@ const Navbar = () => {
                 <a href = {link.link} key={link.id} className='mx-4 text-black'>{link.title}</a>
             )})}
         </div> */}
-        <ul className=" hidden md:flex">
+        <ul className=" hidden md:flex cursor-pointer">
           <Link spy={true} smooth={true} to="#">
             <li className="mx-4 text-sm font-semibold">About</li>
           </Link>
@@ -36,7 +43,7 @@ const Navbar = () => {
           <Link spy={true} smooth={true} to="#">
             <li className="mx-4 text-sm font-semibold">Project</li>
           </Link>
-          <Link spy={true} smooth={true} to="#">
+          <Link spy={true} smooth={true} onClick={handleContactClick}>
             <li className="mx-4 text-sm font-semibold">Contact</li>
           </Link>
         </ul>

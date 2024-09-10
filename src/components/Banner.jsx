@@ -2,8 +2,15 @@ import React from "react";
 import Banner1 from "../assets/banner.png";
 import { motion } from "framer-motion";
 import { SlideUp } from "../animation/animate";
+import { useNavigate } from "react-router-dom";
 
 const Banner = () => {
+
+  const navigate = useNavigate();
+
+  const handleContactClick = () => {
+    navigate("/contact");
+  };
   return (
     <div className="container px-4">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
@@ -42,6 +49,7 @@ const Banner = () => {
               variants={SlideUp(0.6)}
               initial="initial"
               whileInView="animate"
+              onClick={handleContactClick}
             >
               Discover Now
             </motion.button>
