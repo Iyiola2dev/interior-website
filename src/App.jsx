@@ -8,20 +8,19 @@ import Banner2 from "./components/Banner2";
 import Testimonial from "./components/Testimonial";
 import Newsletter from "./components/Newsletter";
 import Footer from "./components/Footer";
-
+import { Route, Routes } from "react-router-dom";
+import Contact from "./pages/Contact";
+import Home from "./pages/Home";
 
 const App = () => {
   return (
     <div className="overflow-x-hidden px-2 py-6">
       <Navbar />
-      <Hero/>
-      <Brand/>
-      <Services/>
-      <Banner/>
-     <Banner2/>
-     <Testimonial/>
-     <Newsletter/>
-     <Footer/>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    
     </div>
   );
 };

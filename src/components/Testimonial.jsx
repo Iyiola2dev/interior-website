@@ -1,5 +1,5 @@
 import { delay, motion } from "framer-motion";
-import React from "react";
+
 import { FaStar } from "react-icons/fa";
 import { SlideLeft, SlideUp } from "../animation/animate";
 
