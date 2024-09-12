@@ -33,7 +33,7 @@ const Contact = () => {
   };
   return (
     <div className="container mx-auto px-4 pt-11 " id="Contacts">
-      <div className=" ">
+      <div className=" flex justify-center md:justify-start">
         <button className="primary-btn bg-black hover:bg-white hover:text-black text-white shadow-[5px_5px_0px_0px_#6c6c6c] flex items-center gap-2 rounded-2xl" onClick={handleHomeClick}>
           <FaArrowLeft />
           <p>Back to home page</p>
